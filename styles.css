@@ -1,0 +1,130 @@
+:root{
+    --primary: #132631;
+    --bodycolor: aliceblue;
+    --pointerCursor: pointer;
+    --dark: rgba(143, 143, 143, 0.719);
+    --sucess: yellowgreen;
+    --danger:red;
+    --reset:yellow;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    font-family: "baloo bhai 2";
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body{
+    /* height: 200vh; */
+}
+.main{
+    /* height: 80%; */
+    /* border: solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10vh;
+    height: calc(100vh - 10vh);
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.main .generator-body .container{
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* border: solid; */
+    padding: 23px 0;
+}
+
+.btn{
+    width: 130px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    color: #132631;
+    border-radius: 12px;
+    border: 3px solid var(--primary);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3.2px;
+    cursor: var(--pointerCursor);
+    transition:  0.2s;
+}
+
+.btn:active{
+    color: #fff;
+    background-color: var(--primary);
+}
+
+.display{
+    width: 8rem;
+    height:13rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    color: #132631;
+    border-radius: 12px;
+    font-size: 9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 3px solid var(--primary);
+    margin-bottom: 52px;
+}
+
+div.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    bottom: 0;
+    /* border: solid; */
+    background-color: #3e3e3e; 
+    height: 17vh;
+    text-align: center;
+}
+
+#techSkills{
+    background-color: #3e3e3e;
+    font-size: 11px;
+    color: #fff;
+}
+
+/* #techSkills img{
+   
+    display: flex;
+    align-items: center;
+} */
+
+.skillsWithLogo img {
+    display: inline-block;
+    width: 15px;
+    height:15px; 
+    margin-left: 5px;
+}
+.skillsWithLogoDiff img {
+    width: 55px;
+    height:15px; 
+}
+.skillsWithLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3e3e3e;
+    color: #fff;
+}
+
+div.footer .copyright-text,span#year{
+    color: #fff;
+    background-color: var(--primary);
+}
