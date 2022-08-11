@@ -37,9 +37,10 @@ body{
     align-items: start;
 
   }
+
 .fixedContainer p{
-    /* margin-left: 8px; */
-    font-size: 0.9rem;
+    margin-left: 8px;
+    font-size: 0.8rem;
     text-transform: capitalize;
     color: yellowgreen;
     font-weight: 700;
