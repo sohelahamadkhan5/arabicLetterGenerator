@@ -26,13 +26,16 @@ $("#generator").click(function(){
     $("#display").css('fontSize',"9rem");
     $("#display").css('color',"green");
     $("#display").attr('class',"neonBorder");
-    $
+    window.clearInterval(slideUpInterval);
+    $("#fixedContainer").css("display","none");
 });
 
-setInterval(function(){
+
+let slideUpInterval = setInterval(function(){
     $("#slideUpArowContainer").slideUp(1500);
     $("#slideUpArowContainer").fadeIn(2000);
 },900)
+
 
 
 

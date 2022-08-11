@@ -30,7 +30,7 @@ body{
     height: calc(100vh - 10vh);
 }
 
-.fixedContainer{
+#fixedContainer{
     height: 8vh;
     padding-top: 8px;
     display: inline-flex;
@@ -38,7 +38,7 @@ body{
 
   }
 
-.fixedContainer p{
+#fixedContainer p{
     margin-left: 8px;
     font-size: 0.8rem;
     text-transform: capitalize;
