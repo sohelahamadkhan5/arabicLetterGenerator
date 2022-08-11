@@ -167,6 +167,16 @@ body{
 .blink_me {
     animation: blinker 4.8s ease-in-out infinite;
   }
+.blink_arrow_msg {
+    animation: blinked 1.4s ease-in-out infinite;
+  }
+
+  @keyframes blinked {
+    30% {
+      opacity: 0;
+     
+    }
+  }
   
   @keyframes blinker {
     100% {
