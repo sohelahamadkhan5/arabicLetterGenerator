@@ -84,12 +84,6 @@ body{
     flex-direction: column;
 }
 
-.greenFont {
-
-    color: green;
-    /* display: none; */
-}
-
 .neonBorder{
     box-shadow: 0 0 .2rem #fff,
             0 0 .2rem #fff,
@@ -159,7 +153,7 @@ div.footer{
     bottom: 0;
     /* border: solid; */
     background-color: #3e3e3e; 
-    height: 17vh;
+    height: 19vh;
     text-align: center;
 }
 
@@ -197,7 +191,7 @@ div.footer .copyright-text,span#year{
     color: #fff;
     background-color: var(--primary);
     font-size: 9px;
-    height: 4vh;    
+    height: 6vh;   
     display: inline-flex;
     align-items: center;
     justify-content: center;

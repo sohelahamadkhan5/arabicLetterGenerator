@@ -24,9 +24,8 @@ $("#generator").click(function(){
     console.log(randomIndex);
     $("#display").html(ArabicLetters[randomIndex]);
     $("#display").css('fontSize',"9rem");
-    $("#display").attr('class',"neonBorder greenFont");
-    // $("#display").attr('class',"green");
-
+    $("#display").css('color',"green");
+    $("#display").attr('class',"neonBorder");
 });
 
 console.log(ArabicLetters[3]);
