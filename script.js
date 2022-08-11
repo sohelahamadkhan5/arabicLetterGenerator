@@ -27,17 +27,28 @@ $("#generator").click(function(){
     $("#display").css('color',"green");
     $("#display").attr('class',"neonBorder");
     window.clearInterval(slideUpInterval);
-    $("#fixedContainer").css("display","none");
+    // clearSlideUpInterval();
+    // $("#fixedContainer").css("display","none");
 });
 
 
 let slideUpInterval = setInterval(function(){
-    $("#slideUpArowContainer").slideUp(1500);
-    $("#slideUpArowContainer").fadeIn(2000);
+    $("#slideUpArowContainer").slideUp(1100);
+    $("#slideUpArowContainer").fadeIn(1100);
 },900)
 
 
+function clearSlideUpInterval(){
+    window.clearInterval(slideUpInterval);
+}
 
+//Display None Function
+function displayNone(){
+    $("#fixedContainer").css("display","none");
+}
+/* document.getElementById("fixedContainer").onscroll = function(){
+
+}; */
 
 //Current Year
 let currentYear = new Date().getFullYear();

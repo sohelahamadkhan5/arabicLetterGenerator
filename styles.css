@@ -46,8 +46,12 @@ body{
     font-weight: 700;
   }
 
-#fixedContainer p span{
+#fixedContainer #msg{
     color: green;
+    margin-left: 1px;    
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    font-weight: 700;
   }
 
 #slideUpArowContainer{
@@ -93,6 +97,9 @@ body{
     letter-spacing: 3.2px;
     cursor: var(--pointerCursor);
     transition:  0.2s;
+    /* Extra for this project */
+    position: absolute;
+    top: 64vh;
 }
 
 .btn:active{
@@ -166,6 +173,9 @@ body{
   height: 3vh;
     align-items: center;
     margin: 12px 0;
+}
+.notBlink{
+    animation: none;
 }
 
 .blink_me {
