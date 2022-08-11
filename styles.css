@@ -67,20 +67,82 @@ body{
     background-color: var(--primary);
 }
 
-.display{
-    width: 8rem;
+#display{
+    width: 12rem;
     height:13rem;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: space-evenly;    
+    text-align: center;
     color: #132631;
     border-radius: 12px;
-    font-size: 9rem;
+    font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
-    border: 3px solid var(--primary);
+    /* border: 3px solid var(--primary);    */
     margin-bottom: 52px;
+    flex-direction: column;
 }
+
+.neonBorder{
+    box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem green,
+            0 0 0.8rem green,
+            0 0 2.8rem green,
+            inset 0 0 0.3rem green; 
+}
+
+.neonText {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+  }
+
+#instruction{
+    font-size: 11px;
+    text-align: justify;
+    color: goldenrod;
+    text-align: center;
+    text-transform: capitalize;
+    /* display: none; */
+    /* letter-spacing: 0; */
+    
+
+}
+
+#instruction b{
+    display: inline-flex;
+  font-weight: bolder;   
+  text-shadow: var(--primary) 1px 0 10px;
+  color: var(--primary);
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  border: solid 0.9px #132631;
+  border-radius: 3px;
+  margin: 0 2px;
+  padding: 0 4px;
+  height: 3vh;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.blink_me {
+    animation: blinker 1.8s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
 
 div.footer{
     display: flex;
@@ -127,4 +189,5 @@ div.footer{
 div.footer .copyright-text,span#year{
     color: #fff;
     background-color: var(--primary);
+    font-size: 9px;
 }

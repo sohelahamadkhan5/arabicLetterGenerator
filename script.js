@@ -1,21 +1,46 @@
 // Random Arabic Letter generator
-//Math.floor((Math.random()*10)+6)  <--------for (0 to 15)
-//Math.floor((Math.random()*10)+1)  <--------for (0 to 10)
+//Math.floor((Math.random()*10)+6)  <--------for (6 to 15)
+//Math.floor((Math.random()*10)+1)  <--------for (1 to 10)
 
-//
+/*
+  // Between any two numbers
+ Math.floor(Math.random() * (max - min + 1)) + min;
 
+// Between 0 and max
+Math.floor(Math.random() * (max + 1));
 
+// Between 1 and max
+Math.floor(Math.random() * max) + 1;
 
+ */
 
+/* --------------------><--------------------------- */
 /* Arabic Letter Array */
 let ArabicLetters = ["ا","ب","ت","ث","ج","ح","خ","د","ذ","ر","ز","س","ش","ص","ض","ط","ظ","ع","غ","ف","ق","ك","ل","م","ن","ه","و","ي","ء"];
+//29 -->0 - 28
 
+$("#generator").click(function(){
+    let randomIndex = randomNumberGenerator(0,28);
+    console.log(randomIndex);
+    $("#display").html(ArabicLetters[randomIndex]);
+    $("#display").css('fontSize',"9rem");
+    $("#display").attr('class',"neonBorder");
+
+});
+
+$("#display").css('color','green');
+console.log(ArabicLetters[3]);
 
 
 
 //Current Year
 let currentYear = new Date().getFullYear();
-console.log(currentYear); 
 
 //jQuery
 $("#year").html(currentYear); 
+
+
+//Function For Generating Random Number
+function randomNumberGenerator(min,max){
+    return Math.floor(Math.random()*(max - min + 1)) + min ;
+}
