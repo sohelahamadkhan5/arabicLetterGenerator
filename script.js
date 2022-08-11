@@ -28,7 +28,7 @@ $("#generator").click(function(){
     $("#display").attr('class',"neonBorder");
     window.clearInterval(slideUpInterval);
     clearSlideUpInterval();
-    // $("#fixedContainer").css("display","none");
+    $("#fixedContainer").css("display","none");
 });
 
 
