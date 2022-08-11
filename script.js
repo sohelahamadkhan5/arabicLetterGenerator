@@ -26,9 +26,13 @@ $("#generator").click(function(){
     $("#display").css('fontSize',"9rem");
     $("#display").css('color',"green");
     $("#display").attr('class',"neonBorder");
+    $
 });
 
-console.log(ArabicLetters[3]);
+setInterval(function(){
+    $("#slideUpArowContainer").slideUp(1500);
+    $("#slideUpArowContainer").fadeIn(2000);
+},900)
 
 
 

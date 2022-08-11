@@ -30,6 +30,34 @@ body{
     height: calc(100vh - 10vh);
 }
 
+.fixedContainer{
+    height: 8vh;
+    padding-top: 8px;
+    display: inline-flex;
+    align-items: start;
+
+  }
+.fixedContainer p{
+    /* margin-left: 8px; */
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    color: yellowgreen;
+    font-weight: 700;
+  }
+
+#slideUpArowContainer{
+    width: fit-content;  
+    /* width: 6vw; */
+    height: 8vh;
+    /* border: solid; */
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: end;
+
+    background-color: aliceblue;
+    padding-left:13px ;
+}
+
 .container{
     width: 90%;
     margin: auto;
@@ -196,5 +224,7 @@ div.footer .copyright-text,span#year{
     align-items: center;
     justify-content: center;
 }
+
+
 
 /* REALME width 336px */
