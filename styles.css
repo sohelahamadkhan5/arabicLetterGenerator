@@ -42,7 +42,7 @@ body{
     margin-left: 8px;
     font-size: 0.8rem;
     text-transform: capitalize;
-    color: yellowgreen;
+    color: gold;
     font-weight: 700;
   }
 
@@ -165,12 +165,14 @@ body{
 }
 
 .blink_me {
-    animation: blinker 1.8s linear infinite;
+    animation: blinker 4.8s ease-in-out infinite;
   }
   
   @keyframes blinker {
-    50% {
-      opacity: 0;
+    100% {
+      /* opacity: 0; */
+      color: #fff;
+      background-color: var(--primary);
     }
   }
 
