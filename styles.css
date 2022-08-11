@@ -68,7 +68,7 @@ body{
 }
 
 #display{
-    width: 12rem;
+    width: 16rem;
     height:13rem;
     display: flex;
     align-items: center;
@@ -76,12 +76,18 @@ body{
     text-align: center;
     color: #132631;
     border-radius: 12px;
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: bold;
     text-transform: uppercase;
-    /* border: 3px solid var(--primary);    */
+    /* border: 2px solid var(--primary); */
     margin-bottom: 52px;
     flex-direction: column;
+}
+
+.greenFont {
+
+    color: green;
+    /* display: none; */
 }
 
 .neonBorder{
@@ -91,6 +97,7 @@ body{
             0 0 0.8rem green,
             0 0 2.8rem green,
             inset 0 0 0.3rem green; 
+            transition: 0.7s;
 }
 
 .neonText {
@@ -107,7 +114,7 @@ body{
   }
 
 #instruction{
-    font-size: 11px;
+    font-size: 1rem;
     text-align: justify;
     color: goldenrod;
     text-align: center;
