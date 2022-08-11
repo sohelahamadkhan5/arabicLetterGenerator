@@ -42,8 +42,8 @@ body{
     margin-left: 8px;
     font-size: 0.8rem;
     text-transform: capitalize;
-    color: goldenrod;
-    font-weight: 700;
+    color: green;
+    font-weight:700;
   }
 
 #fixedContainer #msg{
