@@ -42,6 +42,7 @@ function clearSlideUpInterval(){
     window.clearInterval(slideUpInterval);
 }
 
+$(body).onscroll(displayNone( ));
 //Display None Function
 function displayNone(){
     $("#fixedContainer").css("display","none");
