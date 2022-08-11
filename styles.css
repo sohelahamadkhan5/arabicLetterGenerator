@@ -190,4 +190,8 @@ div.footer .copyright-text,span#year{
     color: #fff;
     background-color: var(--primary);
     font-size: 9px;
+    height: 4vh;    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
