@@ -53,6 +53,7 @@ let currentYear = new Date().getFullYear();
 
 //jQuery
 $("#year").html(currentYear); 
+document.getElementById("#year").innerHTML = currentYear ;
 
 
 //Function For Generating Random Number
