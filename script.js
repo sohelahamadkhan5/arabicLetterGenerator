@@ -27,7 +27,7 @@ $("#generator").click(function(){
     $("#display").css('color',"green");
     $("#display").attr('class',"neonBorder");
     window.clearInterval(slideUpInterval);
-    // clearSlideUpInterval();
+    clearSlideUpInterval();
     // $("#fixedContainer").css("display","none");
 });
 
@@ -46,9 +46,6 @@ function clearSlideUpInterval(){
 function displayNone(){
     $("#fixedContainer").css("display","none");
 }
-/* document.getElementById("fixedContainer").onscroll = function(){
-
-}; */
 
 //Current Year
 let currentYear = new Date().getFullYear();
