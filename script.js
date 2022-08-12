@@ -42,9 +42,7 @@ function clearSlideUpInterval(){
     window.clearInterval(slideUpInterval);
 }
 
-$(body).ready(function(){
-  $(body).onscroll(displayNone( ));
-});
+$(body).onscroll(displayNone( ));
 
 //Display None Function
 function displayNone(){
