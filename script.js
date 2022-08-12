@@ -16,6 +16,9 @@ Math.floor(Math.random() * max) + 1;
 
 /* --------------------><--------------------------- */
 /* Arabic Letter Array */
+
+$(document).ready(function(){
+ 
 let ArabicLetters = ["ا","ب","ت","ث","ج","ح","خ","د","ذ","ر","ز","س","ش","ص","ض","ط","ظ","ع","غ","ف","ق","ك","ل","م","ن","ه","و","ي","ء"];
 //29 -->0 - 28
 
@@ -61,3 +64,7 @@ document.getElementById("#year").innerHTML = currentYear ;
 function randomNumberGenerator(min,max){
     return Math.floor(Math.random()*(max - min + 1)) + min ;
 }
+  
+  
+  
+});
